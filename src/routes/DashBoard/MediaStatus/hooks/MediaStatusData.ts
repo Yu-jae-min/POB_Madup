@@ -10,6 +10,7 @@ const MediaStatusData = () => {
     const sum: IaddRevenueType[] = Object.values(
       inclusionDate.reduce((acc: any, item) => {
         const { channel, click, convValue, cost, cpa, cpc, ctr, cvr, imp, roas } = item;
+
         acc[channel] = acc[channel]
           ? {
               ...item,
